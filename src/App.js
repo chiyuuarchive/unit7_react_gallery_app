@@ -5,6 +5,9 @@ import {
   NavLink
 } from "react-router-dom";
 
+// Import CSS stylesheets
+import "./index.css"
+
 // Import API key
 import APIKey from "./config";
 
