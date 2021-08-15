@@ -19,7 +19,6 @@ export default apiKey;
 5) Enter `npm start` in the terminal to run the application in development mode.
 6) Open "http://localhost:3000" to view it in the browser.
 
-<br>
 
 ## Contact
 ---
