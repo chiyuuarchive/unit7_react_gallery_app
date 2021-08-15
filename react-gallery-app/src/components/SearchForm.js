@@ -1,8 +1,12 @@
+/*
+ * SearchForm.js
+ */
+
+// Import modules
 import React, {Component} from "react";
 import { withRouter } from "react-router-dom";
 
 class SearchForm extends Component {
-
 
     handleSubmit = (e) => {
         // Prevent application to refresh (and thus componentDidMount() from triggering)

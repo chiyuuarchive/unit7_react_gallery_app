@@ -1,3 +1,8 @@
+/*
+ * NotFound.js
+ */
+
+// Import React module
 import React from "react";
 
 const NotFound = props => (

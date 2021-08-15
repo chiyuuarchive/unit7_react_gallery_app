@@ -1,3 +1,8 @@
+/**
+ * App.js
+ */
+
+// Import modules
 import React, {Component} from "react";
 import {
   Route,
@@ -5,13 +10,11 @@ import {
   withRouter
 } from "react-router-dom";
 
-
 // Import child components
 import SearchForm from "./components/SearchForm"; 
 import Nav from "./components/Nav";
 import PhotoContainer from "./components/PhotoContainer";
 import PageNotFound from "./components/PageNotFound";
-
 
 // API key
 import APIKey from "./config"
@@ -39,15 +42,15 @@ class App extends Component {
   }
 
   // A callback function that fetches photo with API key
-   fetchPhotos = (tag) => {
-     console.log("Data is being fetched with the tag:", tag)
+  fetchPhotos = (tag) => {
+    console.log("Data is being fetched with the tag:", tag)
     fetch(`https://www.flickr.com/services/rest/?method=flickr.photos.search&api_key=${APIKey}&tags=${tag}&per_page=24&format=json&nojsoncallback=1`)
     .then(response => response.json())
     .then(responseData => {
-        this.setState({
-            currentPhotos: responseData.photos.photo,
-            loading: false
-        })
+      this.setState({
+          currentPhotos: responseData.photos.photo,
+          loading: false
+      })
     })
     .catch(error => {
       console.log("Error occurred when fetching and/or parsing data", error);
@@ -124,7 +127,6 @@ class App extends Component {
       }
     }
   }
-
   
   render () {
     return (
@@ -181,7 +183,6 @@ class App extends Component {
           <Route component = {PageNotFound}/>
         </Switch>
         }
-
         </div>
     );
   }

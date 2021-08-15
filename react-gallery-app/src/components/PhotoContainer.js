@@ -1,3 +1,8 @@
+/*
+ * PhotoContainer.js
+ */
+
+// Import modules
 import React, {Component} from "react"
 
 // Import relevant components
@@ -8,9 +13,7 @@ class PhotoContainer extends Component {
 
     render () {
         const { currentPhotos } = this.props;
-
         console.log("The photo array to be mapped:", currentPhotos);
-
         let photoList;
 
         if (currentPhotos.length > 0) {
@@ -23,7 +26,6 @@ class PhotoContainer extends Component {
         else {
             photoList = <NotFound />
         }
-
 
         return (
             <div className = "photo-container">

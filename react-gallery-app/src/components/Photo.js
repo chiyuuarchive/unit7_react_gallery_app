@@ -1,3 +1,8 @@
+/*
+ * Photo.js
+ */
+
+// Import React module
 import React from 'react';
 
 const Photo = props => (
