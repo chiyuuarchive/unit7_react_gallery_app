@@ -10,7 +10,7 @@ const apiKey = 'your-API-key';
 export default apiKey;
 </pre>
 
-### Follow below steps to set up the application
+### Follow below steps to set the application up 
 
 1) Install the project from "https://github.com/chiyuuarchive/unit7_react_gallery_app.git".
 2) Extract all the files and open with your preferred code editor.
