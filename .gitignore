@@ -100,3 +100,4 @@ yarn-error.log*
 
 # APIkey
 src/config.js
+react-gallery-app/src/config.js
