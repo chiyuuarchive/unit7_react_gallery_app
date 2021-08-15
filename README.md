@@ -15,8 +15,8 @@ export default apiKey;
 1) Install the project from "https://github.com/chiyuuarchive/unit7_react_gallery_app.git".
 2) Extract all the files and open with your preferred code editor.
 3) Open the terminal and change directory with the `cd react-gallery-app` command.
-4) Run `npm install` and add your `config.js` file inside the `src` folder.
-5) Type `npm start` in the terminal to run the application in development mode
+4) Type `npm install` in the terminal and add your `config.js` file inside the `src` folder.
+5) Enter `npm start` in the terminal to run the application in development mode.
 6) Open "http://localhost:3000" to view it in the browser.
 
 <br>
