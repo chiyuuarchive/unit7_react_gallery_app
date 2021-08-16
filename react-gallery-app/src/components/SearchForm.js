@@ -16,11 +16,8 @@ class SearchForm extends Component {
         const newTag = this.query.value;
         console.log("The search tag has been updated to:", newTag);
 
-        
-        // Add the new URL path based on search input
+        // Add the new URL path of search input to the history array
         this.props.history.push(`/search/${newTag}`)
-
-        // Change the state property of "CurrentTag"
 
         // Clear the search form field.
         e.currentTarget.reset();
